@@ -34,6 +34,13 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0 \
     vndk_package
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.secure=1 \
+    ro.adb.secure=0 \
+    ro.hardware.keystore=msm8998 \
+    ro.product.name=platina \
+    ro.allow.mock.location=0
+
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := omni_taimen
